@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "1070701477294",
+    "project_id": "clear-70ed5",
+    "storage_bucket": "clear-70ed5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1070701477294:android:cd075618f716161a3f9c3f",
+        "android_client_info": {
+          "package_name": "co.divyasuresh.clear"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1070701477294-btr8sq6r255cgkhi4ibq3pjrae33i4or.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDC-jb7u4Uu8LQB_pokm75zGMgmwmiBKao"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1070701477294-btr8sq6r255cgkhi4ibq3pjrae33i4or.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1070701477294-gqk8mqvvenpprovjh4kelh9569ml8nvh.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "co.divyasuresh.clear"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
