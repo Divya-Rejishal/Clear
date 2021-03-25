@@ -1,5 +1,5 @@
 import 'dart:collection';
-
+import 'package:flutter/material.dart';
 import 'package:flutter/foundation.dart';
 import 'package:to_do_app/models/task.dart';
 
@@ -7,14 +7,14 @@ class TaskData extends ChangeNotifier {
   String newTaskAdded;
   bool isRefreshed = false;
   List<Task> _tasks = [
-    Task(taskTitle: 'Swipe to the right to complete!'),
-    Task(taskTitle: 'Swipe to the left to delete'),
-    Task(taskTitle: 'Tap and hold to pick me up'),
-    Task(taskTitle: 'Pull down to create an item'),
-    Task(taskTitle: 'Try shaking to undo'),
-    Task(taskTitle: 'Try pinching two rows apart'),
-    Task(taskTitle: 'Try pinching vertically shut'),
-    Task(taskTitle: 'Pull up to clear'),
+    Task(taskTitle: 'Swipe to the right to complete!', priority: 0),
+    Task(taskTitle: 'Swipe to the left to delete', priority: 1),
+    Task(taskTitle: 'Tap and hold to pick me up', priority: 2),
+    Task(taskTitle: 'Pull down to create an item', priority: 3),
+    Task(taskTitle: 'Try shaking to undo', priority: 4),
+    Task(taskTitle: 'Try pinching two rows apart', priority: 5),
+    Task(taskTitle: 'Try pinching vertically shut', priority: 5),
+    Task(taskTitle: 'Pull up to clear', priority: 5),
   ];
 
   List<Task> get tasks {

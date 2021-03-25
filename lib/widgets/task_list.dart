@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'package:to_do_app/constants.dart';
 import 'package:to_do_app/models/task.dart';
 import 'package:to_do_app/models/task_data.dart';
 import 'package:to_do_app/widgets/task_list_tile.dart';
@@ -40,7 +41,11 @@ class ReorderableListViewWidget extends StatelessWidget {
             child: TaskListTile(
               title: task.taskTitle,
               isChecked: task.isChecked,
-              tileColor: task.isChecked ? Colors.black : Colors.deepOrange,
+              tileColor: task.isChecked
+                  ? Colors.black
+                  : taskData.tasks.indexOf(task) < listTileColors.length
+                      ? listTileColors[taskData.tasks.indexOf(task)]
+                      : Color(0xFFFFD700),
               onTap: () {
                 taskData.updateTask(task);
               },
@@ -92,7 +97,7 @@ class SlideRightBackground extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: Colors.black,
+      color: Colors.green,
       child: Align(
           child: Row(
         children: [
